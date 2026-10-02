@@ -21,15 +21,13 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 
 /* GLOW ORBS */
 .orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px)}
-.orb1{width:600px;height:600px;background:radial-gradient(circle,rgba(99,102,241,0.25),transparent 70%);top:-200px;left:-200px;animation:float1 8s ease-in-out infinite}
-.orb2{width:500px;height:500px;background:radial-gradient(circle,rgba(139,92,246,0.2),transparent 70%);bottom:-150px;right:-150px;animation:float2 10s ease-in-out infinite}
-.orb3{width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,0.15),transparent 70%);top:40%;right:5%;animation:float1 12s ease-in-out infinite;position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px)}
-.orb4{width:350px;height:350px;background:radial-gradient(circle,rgba(239,68,68,0.1),transparent 70%);bottom:10%;left:10%;animation:float2 9s ease-in-out infinite;position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px)}
+.orb3{width:400px;height:400px;background:radial-gradient(circle,rgba(16,185,129,0.15),transparent 70%);top:40%;right:5%;animation:float1 12s ease-in-out infinite;position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px)}.orb1{width:600px;height:600px;background:radial-gradient(circle,rgba(99,102,241,0.25),transparent 70%);top:-200px;left:-200px;animation:float1 8s ease-in-out infinite}
+.orb2{width:500px;height:500px;background:radial-gradient(circle,rgba(191,90,242,0.07),transparent 70%);bottom:-150px;right:-150px;animation:float2 10s ease-in-out infinite}
 @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(60px,40px)}}
 @keyframes float2{0%,100%{transform:translate(0,0)}50%{transform:translate(-40px,-60px)}}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bottom:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.6);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);box-shadow:0 1px 0 rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.3)}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bottom:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.8);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
 .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
 .nav-logo{font-size:1rem;font-weight:700;letter-spacing:-0.02em;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .nav-links{display:flex;gap:2.5rem}
@@ -66,7 +64,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 .hbtn-outline:hover{border-color:rgba(255,255,255,0.2);color:#fff;transform:translateY(-2px)}
 
 /* HERO CARD */
-.hcard{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:24px;padding:2rem;position:relative;overflow:hidden;backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);box-shadow:0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.15)}
+.hcard{background:linear-gradient(145deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:2rem;position:relative;overflow:hidden;backdrop-filter:blur(10px)}
 .hcard::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,255,0.5),rgba(191,90,242,0.5),transparent)}
 .hcard-avatar{width:72px;height:72px;border-radius:18px;background:linear-gradient(135deg,var(--cyan),var(--purple));display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:800;color:#000;margin-bottom:1rem}
 .hcard h3{font-size:1rem;font-weight:700;margin-bottom:0.2rem}
@@ -89,18 +87,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 
 /* PROJECTS */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-.pcard{
-  background:rgba(255,255,255,0.05);
-  backdrop-filter:blur(40px) saturate(180%);
-  -webkit-backdrop-filter:blur(40px) saturate(180%);
-  border:1px solid rgba(255,255,255,0.12);
-  border-radius:var(--r);overflow:hidden;transition:all .3s;cursor:pointer;
-  box-shadow:0 8px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
-  position:relative;
-}
-.pcard::before{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg,rgba(255,255,255,0.07) 0%,transparent 100%);pointer-events:none;z-index:0}
-.pcard:hover{border-color:rgba(99,102,241,0.4);transform:translateY(-6px);box-shadow:0 20px 60px rgba(99,102,241,0.15), inset 0 1px 0 rgba(255,255,255,0.15)}
-.pcard.open{border-color:rgba(0,229,255,0.3);box-shadow:0 0 60px rgba(0,229,255,0.08), inset 0 1px 0 rgba(255,255,255,0.12)}
+.pcard{background:rgba(255,255,255,0.06);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border:1px solid rgba(255,255,255,0.14);border-radius:var(--r);overflow:hidden;transition:all .3s;cursor:pointer;box-shadow:0 8px 32px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.12);position:relative}
+.pcard:hover{border-color:rgba(255,255,255,0.15);transform:translateY(-4px);box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+.pcard.open{border-color:rgba(0,229,255,0.3);box-shadow:0 0 60px rgba(0,229,255,0.08)}
 .pbar{height:2px;width:100%}
 .pbody{padding:2rem}
 .phead{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem}
@@ -134,7 +123,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 .anode{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:0.3rem 0.7rem;font-size:0.75rem;font-weight:600;color:#888;white-space:nowrap}
 .aarr{color:var(--cyan);font-size:0.75rem;opacity:0.5}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.6rem}
-.pgitem{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:0.75rem;text-align:center;backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1)}
+.pgitem{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem;text-align:center}
 .pgnum{font-size:0.68rem;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.25rem;opacity:0.7}
 .pgname{font-size:0.8rem;font-weight:700;margin-bottom:0.15rem}
 .pgdesc{font-size:0.7rem;color:var(--muted)}
@@ -172,7 +161,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 
 /* CERTS */
 .certg{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.cert{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:var(--r);padding:1.5rem;text-align:center;transition:all .2s;position:relative;overflow:hidden;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 4px 16px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.12)}
+.cert{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);border-radius:var(--r);padding:1.5rem;text-align:center;transition:all .2s;position:relative;overflow:hidden}
 .cert::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;opacity:0.5}
 .cert:hover{border-color:rgba(255,255,255,0.12);transform:translateY(-2px)}
 .cert-icon{font-size:2rem;margin-bottom:0.75rem}
@@ -214,7 +203,6 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb3"></div>
-<div class="orb4"></div>
 
 <nav>
   <div class="nav-inner">
@@ -282,9 +270,10 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
   <p class="sec-sub">AI-native IAM frameworks solving problems enterprises pay millions to fix. Click any project to see everything.</p>
   <div class="proj-grid">
 
-    <!-- SMARTAUTH -->
+    <!-- AGENTAUTH -->
     <div class="pcard">
-      <div class="pcard-inner">
+      <div class="pbar" style="background:linear-gradient(90deg,#6366f1,#8b5cf6)"></div>
+      <div class="pbody">
         <div class="phead">
           <div class="picon-wrap">
             <div class="picon" style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2)">🤖</div>
@@ -294,7 +283,7 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
         </div>
         <p class="pdesc">One dashboard to monitor, secure and authenticate ALL your AI agents across any platform. Gives every agent a verified identity, live TrustScore (0-100), MFA protection, auto-lock on suspicious behaviour and instant email alerts — the missing security layer for the AI era.</p>
         <div class="ptechs">
-          <span class="ptech">FastAPI</span><span class="ptech">React</span><span class="ptech">Supabase</span><span class="ptech">Python</span><span class="ptech">Railway</span><span class="ptech">Vercel</span><span class="ptech">Cloudflare</span><span class="ptech">EmailJS</span><span class="ptech">WebAuthn</span>
+          <span class="ptech">FastAPI</span><span class="ptech">React</span><span class="ptech">Supabase</span><span class="ptech">Python</span><span class="ptech">Railway</span><span class="ptech">Vercel</span><span class="ptech">Cloudflare</span><span class="ptech">WebAuthn</span>
         </div>
         <div class="pactions">
           <button class="pbtn pbtn-expand" onclick="toggle('aa')"><span id="et-aa">▼ Full Details</span></button>
@@ -307,7 +296,7 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
             <div class="exp-label">The problem</div>
             <div class="feat-list">
               <div class="feat"><span class="feat-arrow">→</span>88% of companies had an AI agent security incident in 2026 — most are still using shared API keys with zero visibility</div>
-              <div class="feat"><span class="feat-arrow">→</span>Microsoft Agent 365 and Google Gemini Enterprise only work inside their own ecosystems — no cross-platform solution exists</div>
+              <div class="feat"><span class="feat-arrow">→</span>Microsoft Agent 365 and Google solutions only work inside their own ecosystems — no cross-platform solution exists</div>
               <div class="feat"><span class="feat-arrow">→</span>109x more machine identities than human ones in enterprises — none of them properly authenticated or monitored</div>
             </div>
           </div>
@@ -345,7 +334,7 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
           <div class="exp-sec">
             <div class="exp-label">Why it is unique</div>
             <div class="feat-list">
-              <div class="feat"><span class="feat-arrow">→</span>Only cross-platform AI agent security dashboard — works across ALL platforms unlike Microsoft or Google solutions</div>
+              <div class="feat"><span class="feat-arrow">→</span>Only cross-platform AI agent security dashboard — works across ALL platforms unlike single-vendor solutions</div>
               <div class="feat"><span class="feat-arrow">→</span>Live TrustScore is a unique concept — no competitor has built real-time behavioural trust scoring for AI agents</div>
               <div class="feat"><span class="feat-arrow">→</span>Built by an IAM engineer — same Zero Trust principles applied to humans, now applied to AI agents</div>
               <div class="feat"><span class="feat-arrow">→</span>Target acquisition: Okta, Microsoft, CrowdStrike — the "Wiz for AI agent security"</div>
@@ -356,23 +345,13 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
             <div class="feat-list">
               <div class="feat"><span class="feat-arrow">→</span>Landing page: <a href="https://agentauth.site" target="_blank" style="color:#6366f1">agentauth.site</a></div>
               <div class="feat"><span class="feat-arrow">→</span>Dashboard: <a href="https://app.agentauth.site" target="_blank" style="color:#6366f1">app.agentauth.site</a></div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </div>
-</div>
-
-<hr class="hdiv">
-
-<!-- SKILLS -->
-<div class="sec" id="skills">
-  <div class="sec-pill">Technical</div>
-  <div class="sec-title">Skills</div>
-  <p class="sec-sub">Enterprise IAM platforms, AI/ML development and identity security protocols.</p>
+    <!-- SMARTAUTH -->
     <div class="pcard open" id="pc-sa">
       <div class="pbar" style="background:linear-gradient(90deg,#30d158,#00e5ff)"></div>
       <div class="pbody">
@@ -519,6 +498,16 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
       </div>
     </div>
 
+  </div>
+</div>
+
+<hr class="hdiv">
+
+<!-- SKILLS -->
+<div class="sec" id="skills">
+  <div class="sec-pill">Technical</div>
+  <div class="sec-title">Skills</div>
+  <p class="sec-sub">Enterprise IAM platforms, AI/ML development and identity security protocols.</p>
   <div class="sg">
     <div class="sgroup">
       <div class="sgh"><div class="sgicon" style="background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.15)">🔐</div><div class="sgtitle">IAM Platforms</div></div>
