@@ -249,7 +249,7 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
       <div class="hcard-stats">
         <div class="hs"><div class="hs-num">3+</div><div class="hs-label">Years IAM</div></div>
         <div class="hs"><div class="hs-num">6+</div><div class="hs-label">Platforms</div></div>
-        <div class="hs"><div class="hs-num">2</div><div class="hs-label">OSS Projects</div></div>
+        <div class="hs"><div class="hs-num">3</div><div class="hs-label">OSS Projects</div></div>
         <div class="hs"><div class="hs-num">100%</div><div class="hs-label">ML Accuracy</div></div>
       </div>
       <div class="hcard-links">
@@ -410,6 +410,86 @@ footer{border-top:1px solid rgba(255,255,255,0.05);padding:3rem 2.5rem;text-alig
               <div class="feat"><span class="feat-arrow">→</span>First open-source framework combining NHI discovery + ML anomaly detection + explainable AI + autonomous remediation in one tool</div>
               <div class="feat"><span class="feat-arrow">→</span>Platform agnostic — works with ForgeRock AM/IDM and any OAuth2-based IAM platform</div>
               <div class="feat"><span class="feat-arrow">→</span>Targets the fastest-growing IAM spend category — NHI governance is the #1 unsolved problem in enterprise identity security in 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pcard">
+      <div class="pcard-inner">
+        <div class="phead">
+          <div class="picon-wrap">
+            <div class="picon" style="background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2)">🤖</div>
+            <div><div class="ptitle">AgentAuth</div><div class="psub">AI agent identity &amp; authentication platform</div></div>
+          </div>
+          <span class="pstatus-live">● Live</span>
+        </div>
+        <p class="pdesc">One dashboard to monitor, secure and authenticate ALL your AI agents across any platform. Gives every agent a verified identity, live TrustScore (0-100), MFA protection, auto-lock on suspicious behaviour and instant email alerts — the missing security layer for the AI era.</p>
+        <div class="ptechs">
+          <span class="ptech">FastAPI</span><span class="ptech">React</span><span class="ptech">Supabase</span><span class="ptech">Python</span><span class="ptech">Railway</span><span class="ptech">Vercel</span><span class="ptech">Cloudflare</span><span class="ptech">EmailJS</span><span class="ptech">WebAuthn</span>
+        </div>
+        <div class="pactions">
+          <button class="pbtn pbtn-expand" onclick="toggle('aa')"><span id="et-aa">▼ Full Details</span></button>
+          <a href="https://agentauth.site" target="_blank"><button class="pbtn pbtn-gh">🌐 agentauth.site</button></a>
+        </div>
+      </div>
+      <div class="pexpand" id="pe-aa">
+        <div class="pexp-inner">
+          <div class="exp-sec">
+            <div class="exp-label">The problem</div>
+            <div class="feat-list">
+              <div class="feat"><span class="feat-arrow">→</span>88% of companies had an AI agent security incident in 2026 — most are still using shared API keys with zero visibility</div>
+              <div class="feat"><span class="feat-arrow">→</span>Microsoft Agent 365 and Google Gemini Enterprise only work inside their own ecosystems — no cross-platform solution exists</div>
+              <div class="feat"><span class="feat-arrow">→</span>109x more machine identities than human ones in enterprises — none of them properly authenticated or monitored</div>
+            </div>
+          </div>
+          <div class="exp-sec">
+            <div class="exp-label">Architecture</div>
+            <div class="arch">
+              <span class="anode">Agent registration</span><span class="aarr">→</span>
+              <span class="anode">AgentID + MFA</span><span class="aarr">→</span>
+              <span class="anode">Behaviour monitor</span><span class="aarr">→</span>
+              <span class="anode">TrustScore engine</span><span class="aarr">→</span>
+              <span class="anode">Auto-lock</span><span class="aarr">→</span>
+              <span class="anode">Email alert</span><span class="aarr">→</span>
+              <span class="anode">Live dashboard</span>
+            </div>
+          </div>
+          <div class="exp-sec">
+            <div class="exp-label">What it does</div>
+            <div class="feat-list">
+              <div class="feat"><span class="feat-arrow">→</span>Companies register existing AI agents from any platform — each gets a verified identity, AgentID and cryptographic credentials</div>
+              <div class="feat"><span class="feat-arrow">→</span>Live TrustScore (0-100) calculated per agent based on behaviour — unique feature no competitor has built</div>
+              <div class="feat"><span class="feat-arrow">→</span>MFA protection — OTP, push notification or fingerprint — so no attacker can access an agent even with stolen credentials</div>
+              <div class="feat"><span class="feat-arrow">→</span>Auto-lock when TrustScore drops — instant revocation with zero downtime and immediate email alert to the owner</div>
+              <div class="feat"><span class="feat-arrow">→</span>Full audit trail — every action logged, every API call recorded, complete compliance visibility across all agents</div>
+            </div>
+          </div>
+          <div class="exp-sec">
+            <div class="exp-label">Build phases</div>
+            <div class="pgrid">
+              <div class="pgitem"><div class="pgnum">Phase 1</div><div class="pgname">Landing Page</div><div class="pgdesc">Live at agentauth.site</div></div>
+              <div class="pgitem"><div class="pgnum">Phase 2</div><div class="pgname">Backend API</div><div class="pgdesc">FastAPI + Supabase</div></div>
+              <div class="pgitem"><div class="pgnum">Phase 3</div><div class="pgname">Dashboard</div><div class="pgdesc">Live at app.agentauth.site</div></div>
+              <div class="pgitem"><div class="pgnum">Phase 4</div><div class="pgname">MFA + Alerts</div><div class="pgdesc">WebAuthn + Email</div></div>
+            </div>
+          </div>
+          <div class="exp-sec">
+            <div class="exp-label">Why it is unique</div>
+            <div class="feat-list">
+              <div class="feat"><span class="feat-arrow">→</span>Only cross-platform AI agent security dashboard — works across ALL platforms unlike Microsoft or Google solutions</div>
+              <div class="feat"><span class="feat-arrow">→</span>Live TrustScore is a unique concept — no competitor has built real-time behavioural trust scoring for AI agents</div>
+              <div class="feat"><span class="feat-arrow">→</span>Built by an IAM engineer — same Zero Trust principles applied to humans, now applied to AI agents</div>
+              <div class="feat"><span class="feat-arrow">→</span>Target acquisition: Okta, Microsoft, CrowdStrike — the "Wiz for AI agent security"</div>
+            </div>
+          </div>
+          <div class="exp-sec">
+            <div class="exp-label">Live links</div>
+            <div class="feat-list">
+              <div class="feat"><span class="feat-arrow">→</span>Landing page: <a href="https://agentauth.site" target="_blank" style="color:#6366f1">agentauth.site</a></div>
+              <div class="feat"><span class="feat-arrow">→</span>Dashboard: <a href="https://app.agentauth.site" target="_blank" style="color:#6366f1">app.agentauth.site</a></div>
+              <div class="feat"><span class="feat-arrow">→</span>API: <a href="https://api.agentauth.site" target="_blank" style="color:#6366f1">api.agentauth.site</a></div>
             </div>
           </div>
         </div>
