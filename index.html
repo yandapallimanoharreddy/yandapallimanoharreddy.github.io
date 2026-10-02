@@ -8,7 +8,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --bg:#000;--bg2:#0d0d0d;--bg3:#151515;--bg4:#1c1c1c;
-  --text:#fff;--muted:#777;--muted2:#444;
+  --text:#fff;--muted:#aaa;--muted2:#666;
   --cyan:#00e5ff;--purple:#bf5af2;--green:#30d158;--amber:#ffd60a;--red:#ff453a;
   --border:#1e1e1e;--border2:#2a2a2a;--r:14px;
 }
@@ -54,7 +54,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 .hero-title{font-size:4rem;font-weight:800;letter-spacing:-0.04em;line-height:1.0;margin-bottom:1.5rem;background:linear-gradient(135deg,var(--cyan) 0%,var(--purple) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-sub{font-size:1.05rem;color:var(--muted);line-height:1.75;margin-bottom:2rem;max-width:520px}
 .hero-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2.5rem}
-.htag{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#999;padding:0.3rem 0.8rem;border-radius:8px;font-size:0.78rem;font-weight:500;transition:all .2s;cursor:default}
+.htag{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#ddd;padding:0.3rem 0.8rem;border-radius:8px;font-size:0.78rem;font-weight:500;transition:all .2s;cursor:default}
 .htag:hover{border-color:rgba(0,229,255,0.3);color:var(--cyan)}
 .hero-btns{display:flex;gap:0.75rem;flex-wrap:wrap}
 .hbtn{padding:0.7rem 1.5rem;border-radius:10px;font-size:0.875rem;font-weight:700;cursor:pointer;border:none;display:inline-flex;align-items:center;gap:0.4rem;transition:all .2s;letter-spacing:0.01em}
@@ -101,12 +101,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 .pstatus-build{font-size:0.7rem;padding:0.22rem 0.65rem;border-radius:999px;font-weight:700;background:rgba(255,214,10,0.1);color:var(--amber);border:1px solid rgba(255,214,10,0.2)}
 .pdesc{color:#666;font-size:0.875rem;line-height:1.7;margin-bottom:1.2rem}
 .ptechs{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.3rem}
-.ptech{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#555;padding:0.2rem 0.6rem;border-radius:5px;font-size:0.72rem;font-family:monospace;font-weight:600}
+.ptech{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#aaa;padding:0.2rem 0.6rem;border-radius:5px;font-size:0.72rem;font-family:monospace;font-weight:600}
 .pactions{display:flex;gap:0.6rem}
 .pbtn{display:inline-flex;align-items:center;gap:0.35rem;padding:0.45rem 1rem;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;transition:all .2s;border:none}
 .pbtn-expand{background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.2);color:var(--cyan)}
 .pbtn-expand:hover{background:rgba(0,229,255,0.15)}
-.pbtn-gh{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#666}
+.pbtn-gh{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#aaa}
 .pbtn-gh:hover{color:#ccc;border-color:rgba(255,255,255,0.15)}
 
 /* EXPANDED */
@@ -120,27 +120,27 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 2.5rem;border-bot
 .feat{display:flex;gap:0.75rem;font-size:0.855rem;color:#666;line-height:1.6}
 .feat-arrow{color:var(--cyan);flex-shrink:0;opacity:0.7}
 .arch{display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;padding:1rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:10px}
-.anode{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:6px;padding:0.3rem 0.7rem;font-size:0.75rem;font-weight:600;color:#888;white-space:nowrap}
+.anode{background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.16);border-radius:6px;padding:0.3rem 0.7rem;font-size:0.75rem;font-weight:600;color:#bbb;white-space:nowrap}
 .aarr{color:var(--cyan);font-size:0.75rem;opacity:0.5}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.6rem}
-.pgitem{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem;text-align:center}
+.pgitem{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:0.75rem;text-align:center}
 .pgnum{font-size:0.68rem;font-weight:700;color:var(--cyan);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.25rem;opacity:0.7}
 .pgname{font-size:0.8rem;font-weight:700;margin-bottom:0.15rem}
 .pgdesc{font-size:0.7rem;color:var(--muted)}
 .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.6rem}
-.mitem{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:1rem;text-align:center}
+.mitem{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);border-radius:8px;padding:1rem;text-align:center}
 .mval{font-size:1.6rem;font-weight:800;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .mlabel{font-size:0.72rem;color:var(--muted);margin-top:0.2rem}
 
 /* SKILLS */
 .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.sgroup{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:var(--r);padding:1.5rem;transition:border-color .2s}
+.sgroup{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:var(--r);padding:1.5rem;transition:border-color .2s}
 .sgroup:hover{border-color:rgba(255,255,255,0.1)}
 .sgh{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.2rem}
 .sgicon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem}
 .sgtitle{font-size:0.9rem;font-weight:700}
 .chips{display:flex;flex-wrap:wrap;gap:0.4rem}
-.chip{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);color:#666;padding:0.25rem 0.65rem;border-radius:6px;font-size:0.77rem;font-weight:500;transition:all .2s;cursor:default}
+.chip{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);color:#aaa;padding:0.25rem 0.65rem;border-radius:6px;font-size:0.77rem;font-weight:500;transition:all .2s;cursor:default}
 .chip:hover{border-color:rgba(0,229,255,0.25);color:#aaa}
 
 /* TIMELINE */
